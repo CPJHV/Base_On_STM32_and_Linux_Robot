@@ -1,0 +1,219 @@
+# ============================================================
+# 完全忽略的顶层模块（不保留任何内容）
+# ============================================================
+/A1/
+/A2/
+/A3/
+/A6/
+/A11/
+/A13/
+
+# ============================================================
+# A4 模块（逐层筛选）
+# ============================================================
+/A4/*
+!A4/booteloadpower
+A4/booteloadpower/*
+!A4/booteloadpower/RSA.py
+!A4/booteloadpower/Core
+A4/booteloadpower/Core/*
+!A4/booteloadpower/Core/Src
+A4/booteloadpower/Core/Src/*
+!A4/booteloadpower/Core/Src/main.c
+
+!A4/powerstm32
+A4/powerstm32/*
+!A4/powerstm32/Src
+# 仅排除这三个文件，其余全部保留
+A4/powerstm32/Src/stm32f1xx_hal_msp.c
+A4/powerstm32/Src/stm32f1xx_it.c
+A4/powerstm32/Src/system_stm32f1xx.c
+
+# ============================================================
+# A5 模块（逐层筛选）
+# ============================================================
+/A5/*
+!A5/wushuapowerbootload
+A5/wushuapowerbootload/*
+!A5/wushuapowerbootload/Src
+A5/wushuapowerbootload/Src/*
+!A5/wushuapowerbootload/Src/main.c
+!A5/wushuapowerbootload/Src/gpio.c
+
+!A5/noshuapower
+A5/noshuapower/*
+!A5/noshuapower/Src
+A5/noshuapower/Src/*
+!A5/noshuapower/Src/freertos.c
+!A5/noshuapower/Src/main.c
+
+!A5/noshuapower/Src/App
+A5/noshuapower/Src/App/*
+!A5/noshuapower/Src/App/*
+
+!A5/noshuapower/Src/Drivers
+A5/noshuapower/Src/Drivers/*
+!A5/noshuapower/Src/Drivers/Include
+A5/noshuapower/Src/Drivers/Include/*
+!A5/noshuapower/Src/Drivers/Include/*
+!A5/noshuapower/Src/Drivers/Src
+A5/noshuapower/Src/Drivers/Src/*
+!A5/noshuapower/Src/Drivers/Src/*
+
+!A5/noshuapower/Src/Services
+A5/noshuapower/Src/Services/*
+!A5/noshuapower/Src/Services/Include
+A5/noshuapower/Src/Services/Include/*
+!A5/noshuapower/Src/Services/Include/*
+!A5/noshuapower/Src/Services/Src
+A5/noshuapower/Src/Services/Src/*
+!A5/noshuapower/Src/Services/Src/*
+
+# ============================================================
+# A7 模块（目录名 Brush_Monitor，App 大写 APP）
+# ============================================================
+/A7/*
+!A7/Brush_Monitor
+A7/Brush_Monitor/*
+!A7/Brush_Monitor/Src
+A7/Brush_Monitor/Src/*
+!A7/Brush_Monitor/Src/freertos.c
+!A7/Brush_Monitor/Src/main.c
+
+!A7/Brush_Monitor/Src/APP
+A7/Brush_Monitor/Src/APP/*
+!A7/Brush_Monitor/Src/APP/*
+
+!A7/Brush_Monitor/Src/Config
+A7/Brush_Monitor/Src/Config/*
+!A7/Brush_Monitor/Src/Config/*
+
+!A7/Brush_Monitor/Src/Drivers
+A7/Brush_Monitor/Src/Drivers/*
+!A7/Brush_Monitor/Src/Drivers/Include
+A7/Brush_Monitor/Src/Drivers/Include/*
+!A7/Brush_Monitor/Src/Drivers/Include/*
+!A7/Brush_Monitor/Src/Drivers/Src
+A7/Brush_Monitor/Src/Drivers/Src/*
+!A7/Brush_Monitor/Src/Drivers/Src/*
+
+!A7/Brush_Monitor/Src/Services
+A7/Brush_Monitor/Src/Services/*
+!A7/Brush_Monitor/Src/Services/Include
+A7/Brush_Monitor/Src/Services/Include/*
+!A7/Brush_Monitor/Src/Services/Include/*
+!A7/Brush_Monitor/Src/Services/Src
+A7/Brush_Monitor/Src/Services/Src/*
+!A7/Brush_Monitor/Src/Services/Src/*
+
+# 强制忽略这些目录
+/A7/Brush_Monitor/MDK-ARM/
+/A7/Brush_Monitor/Middlewares/
+/A7/Brush_Monitor/Noname/
+
+# ============================================================
+# A8 模块（目录名 Brushless monitor（含空格），App 小写）
+# ============================================================
+/A8/*
+!A8/Brushless monitor
+A8/Brushless monitor/*
+!A8/Brushless monitor/Src
+A8/Brushless monitor/Src/*
+!A8/Brushless monitor/Src/freertos.c
+!A8/Brushless monitor/Src/main.c
+
+!A8/Brushless monitor/Src/App
+A8/Brushless monitor/Src/App/*
+!A8/Brushless monitor/Src/App/*
+
+!A8/Brushless monitor/Src/Config
+A8/Brushless monitor/Src/Config/*
+!A8/Brushless monitor/Src/Config/*
+
+!A8/Brushless monitor/Src/Drivers
+A8/Brushless monitor/Src/Drivers/*
+!A8/Brushless monitor/Src/Drivers/Include
+A8/Brushless monitor/Src/Drivers/Include/*
+!A8/Brushless monitor/Src/Drivers/Include/*
+!A8/Brushless monitor/Src/Drivers/Src
+A8/Brushless monitor/Src/Drivers/Src/*
+!A8/Brushless monitor/Src/Drivers/Src/*
+
+!A8/Brushless monitor/Src/Services
+A8/Brushless monitor/Src/Services/*
+!A8/Brushless monitor/Src/Services/Include
+A8/Brushless monitor/Src/Services/Include/*
+!A8/Brushless monitor/Src/Services/Include/*
+!A8/Brushless monitor/Src/Services/Src
+A8/Brushless monitor/Src/Services/Src/*
+!A8/Brushless monitor/Src/Services/Src/*
+
+# 强制忽略这些目录
+/A8/Brushless monitor/MDK-ARM/
+/A8/Brushless monitor/Middlewares/
+/A8/Brushless monitor/Noname/
+
+# ============================================================
+# A9 模块（保留任意层级所有 .py 文件）
+# ============================================================
+/A9/**/*
+!A9/**/*.py
+
+# ============================================================
+# A10 模块（逐层筛选）
+# ============================================================
+/A10/*
+!A10/steeptermonitor
+A10/steeptermonitor/*
+!A10/steeptermonitor/Src
+A10/steeptermonitor/Src/*
+!A10/steeptermonitor/Src/freertos.c
+!A10/steeptermonitor/Src/main.c
+
+!A10/steeptermonitor/Src/configh
+A10/steeptermonitor/Src/configh/*
+!A10/steeptermonitor/Src/configh/MotorCommon.h
+
+!A10/steeptermonitor/Src/Drivers
+A10/steeptermonitor/Src/Drivers/*
+!A10/steeptermonitor/Src/Drivers/Include
+A10/steeptermonitor/Src/Drivers/Include/*
+!A10/steeptermonitor/Src/Drivers/Include/*.h
+
+!A10/steeptermonitor/Src/Drivers/Src
+A10/steeptermonitor/Src/Drivers/Src/*
+!A10/steeptermonitor/Src/Drivers/Src/*.c
+!A10/steeptermonitor/Src/Drivers/Src/*.cpp
+
+# ============================================================
+# A12 模块（仅保留 MOVE 下所有 .h 和 .cpp）
+# ============================================================
+/A12/*
+!A12/UR_kinematics_solver-master
+A12/UR_kinematics_solver-master/*
+!A12/UR_kinematics_solver-master/UR_kinematics_solver-master
+A12/UR_kinematics_solver-master/UR_kinematics_solver-master/*
+!A12/UR_kinematics_solver-master/UR_kinematics_solver-master/MOVE
+A12/UR_kinematics_solver-master/UR_kinematics_solver-master/MOVE/*
+!A12/UR_kinematics_solver-master/UR_kinematics_solver-master/MOVE/*.h
+!A12/UR_kinematics_solver-master/UR_kinematics_solver-master/MOVE/*.cpp
+
+# ============================================================
+# 全局忽略（所有模块共用）
+# ============================================================
+Objects/
+Listings/
+*.uvoptx
+*.uvgui*
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.d
+*.crf
+*.lst
+*.bak
+.DS_Store
+Thumbs.db
